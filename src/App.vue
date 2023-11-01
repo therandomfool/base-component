@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <RssVue />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import RssVue from "./components/RssVue.vue";
 
 @Options({
   components: {
-    HelloWorld,
+    RssVue,
   },
 })
 export default class App extends Vue {}
@@ -17,11 +16,14 @@ export default class App extends Vue {}
 
 <style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+  padding: 2% 0;
+  max-width: 800px;
+  background-color: gold;
 }
 </style>
